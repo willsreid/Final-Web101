@@ -1,0 +1,116 @@
+nav{
+  border: solid red;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-gap: 1.5rem; */
+  /* justify-items: ; */
+  margin: 0;
+  padding: 0; 
+  width: 100%;
+  height: 60px;
+}
+
+.mainLogo{
+  border: 1px solid #ee0606;
+  height: 30px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+/* nav a{
+  border: 1px solid #a61186;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.pageLinks{
+  border: 1px solid #1e5dca;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.pageLinks a{
+  border: 1px solid #19b0eb;
+  height: 30px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  
+}
+
+
+
+.mainHead{
+  border: solid purple;
+  position: relative;
+  text-align: center;
+}
+
+.mainHead img{
+  height: 300px;
+  width: 100%;
+  display: block;
+  
+
+}
+
+.mainHead h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 50px; /* Adjust the font size as needed */
+  color: white; /* Set the text color */
+}
+
+
+.mainContainer{
+  border: solid red;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; 
+}
+
+.contactInfo{
+  border: solid blue;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  width: 40%;
+  
+}
+
+h2{
+  border: solid gold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactInfo p{
+  border: solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.contactInfo i{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
