@@ -1,35 +1,14 @@
-nav{
-  border: solid red;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-gap: 1.5rem; */
-  /* justify-items: ; */
-  margin: 0;
-  padding: 0; 
-  width: 100%;
-  height: 60px;
+:root {
+  --ash-gray: #cad2c5ff;
+  --cambridge-blue: #84a98cff;
+  --hookers-green: #52796fff;
+  --dark-slate-gray: #354f52ff;
+  --charcoal: #2f3e46ff;
+  
 }
-
-.mainLogo{
-  border: 1px solid #ee0606;
-  height: 30px;
-  width: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 20px;
-  margin-top: 13px;
-}
-/* nav a{
-  border: 1px solid #a61186;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .pageLinks{
-  border: 1px solid #1e5dca;
+  /* border: 1px solid #1e5dca; */
   display: flex;
   gap: 20px;
   align-items: center;
@@ -39,7 +18,7 @@ nav{
 }
 
 .pageLinks a{
-  border: 1px solid #19b0eb;
+  /* border: 1px solid #19b0eb; */
   height: 30px;
   width: 70px;
   display: flex;
@@ -51,7 +30,7 @@ nav{
 
 
 .mainHead{
-  border: solid purple;
+  /* border: solid purple; */
   position: relative;
   text-align: center;
 }
@@ -75,7 +54,7 @@ nav{
 }
 
 .mainContainer{
-  border: solid red;
+  background: var(--ash-gray);
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -112,6 +91,19 @@ nav{
 .imgDiv{
   height: 250px;
   width: 250px;
-  border: 1px solid #bd0303;
+  /* border: 1px solid #bd0303; */
 }
 
+
+
+footer{
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}

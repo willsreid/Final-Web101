@@ -1,0 +1,126 @@
+:root {
+  --ash-gray: #cad2c5ff;
+  --cambridge-blue: #84a98cff;
+  --hookers-green: #52796fff;
+  --dark-slate-gray: #354f52ff;
+  --charcoal: #2f3e46ff;
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #a09e9d;
+  
+}
+--caribbean-current: #006d77ff;
+--tiffany-blue: #83c5beff;
+--alice-blue: #edf6f9ff;
+--pale-dogwood: #ffddd2ff;
+--atomic-tangerine: #e29578ff; */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0; 
+  font-family: "Source Sans Pro";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
+.navbar {
+  display: flex;
+  flex-wrap: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-slate-gray);
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+  /* font awsome 로고는 font 이기 때문에 
+  font 관련 속성을 사용해 스타일 설정 */
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--cambridge-blue);
+  padding: .2em;
+  border-radius: 50%;
+  border: 5px outset var(--ash-gray);
+}
+
+.navbar__logo i {
+  color: var(--accent-color);
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+  color: var(--text-color);
+}
+
+
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding-left: 0px;
+}
+
+.navbar__icons li {
+  padding: 12px 12px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  font-size: 24px;
+  color: var(--dark-slate-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
+
